@@ -1,3 +1,5 @@
+package com.startjava.lesson_2_3.animal;
+
 public class Wolf {
 
     private String gender;
@@ -5,7 +7,6 @@ public class Wolf {
     private String color;
     private int weight;
     private int age;
-
 
     public void walk() {
         System.out.println("Идет");
@@ -63,9 +64,9 @@ public class Wolf {
     }
 
     public void setAge(int age) {
-            this.age = age;
-            if (age > 8) {
-            System.out.println("Некорректный возраст");
+        this.age = age;
+        if (age > 8) {
+        System.out.println("Некорректный возраст");
         } else {
             return;
         }
