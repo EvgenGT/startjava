@@ -10,11 +10,11 @@ public class JaegerTest {
 
         Jaeger jaeger2 = new Jaeger("Coyote Tango", "Mark-1", 7450);
 
-        System.out.println(jaeger1.getModelName() + ", " + jaeger1.getMark() + ", " + 
-                            jaeger1.getWeight());
+        System.out.println(jaeger1.getModelName() + ", " + jaeger1.getMark() + ", " +
+                jaeger1.getWeight());
 
-        System.out.println(jaeger2.getModelName() + ", " + jaeger2.getMark() + ", " 
-                            + jaeger2.getWeight());
+        System.out.println(jaeger2.getModelName() + ", " + jaeger2.getMark() + ", "
+                + jaeger2.getWeight());
 
         jaeger1.move();
         jaeger2.attack();

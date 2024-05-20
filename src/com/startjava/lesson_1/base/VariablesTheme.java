@@ -1,4 +1,5 @@
 package com.startjava.lesson_1.base;
+
 public class VariablesTheme {
     public static void main(String[] args) {
         System.out.println();
@@ -92,7 +93,7 @@ public class VariablesTheme {
 
         System.out.println("новое значение: a = " + b);
         System.out.println("новое значение: b = " + c);
-        
+
         System.out.println();
         System.out.println("Способ 2: с помощью арифметических операций");
         System.out.println("исходное значение: a = " + c);
@@ -131,9 +132,9 @@ public class VariablesTheme {
         char o = ')';
 
         System.out.println("    " + k + " " + l);
-        System.out.println("   " + k +"   " + l);
+        System.out.println("   " + k + "   " + l);
         System.out.println("  " + k + m + n + "  " + o + l);
-        System.out.println(" " + k +"       " + l);
+        System.out.println(" " + k + "       " + l);
         System.out.println("" + k + m + m + m + m + k + l + m + m + m + l);
 
         System.out.println();

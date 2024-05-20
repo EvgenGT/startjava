@@ -18,7 +18,7 @@ public class RpsGameFormatting {
 
         if (position1 > 66) {
             sign1 = paper;
-        
+
         } else if (position1 > 33) {
             sign1 = scissors;
         }
@@ -62,14 +62,14 @@ public class RpsGameFormatting {
 
         System.out.println(sign2);
 
-        if (sign1.equals (sign2)) {
+        if (sign1.equals(sign2)) {
             System.out.println("Победила дружба!");
-                return;
+            return;
         }
 
         // Условие true для переменной isName1Equal
         boolean isName1Equal = sign1.equals(rock) && sign2.equals(scissors) ||
-                sign1.equals(scissors) && sign2.equals(paper) || 
+                sign1.equals(scissors) && sign2.equals(paper) ||
                 sign1.equals(paper) && sign2.equals(rock);
 
         if (isName1Equal) {

@@ -18,7 +18,7 @@ public class IfElseStatementTheme {
             System.out.println("ваш рост 1,8 м или меньше");
         } else {
             System.out.println("ваш рост 1,8 м или больше");
-    }
+        }
 
         String name = "Michael";
         char x = name.charAt(0);
@@ -29,7 +29,7 @@ public class IfElseStatementTheme {
             System.out.println("Ваше имя начинается на букву - " + x);
         } else {
             System.out.println("Имя не начинается на букву M или I");
-    }
+        }
 
         System.out.println();
         System.out.println("Задача № 2. Поиск большего числа");
@@ -40,14 +40,14 @@ public class IfElseStatementTheme {
         int min_a = a < b ? a : b;
 
         System.out.println("a = " + a + "; b = " + b);
-        
+
         if (a > b) {
             System.out.println("переменная a = " + max_a + " и она больше, чем переменная b");
         } else if (a == b) {
             System.out.println("переменные a и b равны");
         } else if (a < b) {
             System.out.println("переменная a = " + min_a + " и она меньше, чем переменная b");
-    }
+        }
 
         System.out.println();
         System.out.println("Задача № 3. Проверка числа");
@@ -61,7 +61,7 @@ public class IfElseStatementTheme {
             System.out.println("число " + unit + " является отрицательным и нечетным");
         } else if (unit > 0) {
             System.out.println("число " + unit + " является положительным и нечетным");
-    }
+        }
 
         System.out.println();
         System.out.println("Задача № 4. Поиск одинаковых цифр в числах");
@@ -76,13 +76,13 @@ public class IfElseStatementTheme {
         int num6 = two % 10;
         if (num1 == num4) {
             System.out.println("равны сотни");
-    }
+        }
         if (num2 == num5) {
             System.out.println("равны десятки");
-    }
+        }
         if (num3 == num6) {
             System.out.println("равны единицы");
-    }
+        }
 
         System.out.println();
         System.out.println("Задача № 5. Определение символа по его коду");
@@ -91,10 +91,10 @@ public class IfElseStatementTheme {
         boolean isArg1 = (arg >= 'a' && arg <= 'z');
         boolean isArg2 = (arg >= 'A' && arg <= 'Z');
         boolean isArg3 = (arg >= '0' && arg <= '9');
- 
+
         if (isArg1 == true) {
             System.out.println("Символ " + arg + " это строчная буква");
- 
+
         } else if (isArg2 == true) {
             System.out.println("Символ " + arg + " это прописная буква");
 
@@ -119,7 +119,7 @@ public class IfElseStatementTheme {
             System.out.println("Сумма вклада = " + depo + " руб.");
             System.out.println("Сумма начисленных процентов = " + depo1 + " руб.");
             System.out.println("Итоговая сумма с процентами = " + sum1 + " руб.");
-        
+
         } else if (depo >= 100000 && depo < 300000) {
             double depo2 = depo * rate2 / 100;
             double sum2 = depo2 + depo;
@@ -146,30 +146,30 @@ public class IfElseStatementTheme {
 
         if (hist <= 60) {
             grade = 2;
-                System.out.println("оценка по истории - " + grade);
+            System.out.println("оценка по истории - " + grade);
         } else if (hist > 60 && hist < 73) {
             grade = 3;
-                System.out.println("оценка по истории - " + grade);
+            System.out.println("оценка по истории - " + grade);
         } else if (hist >= 73 && hist < 91) {
             grade = 4;
-                System.out.println("оценка по истории - " + grade);
+            System.out.println("оценка по истории - " + grade);
         } else if (hist >= 91) {
             grade = 5;
-                System.out.println("оценка по истории - " + grade);
-    }
+            System.out.println("оценка по истории - " + grade);
+        }
         if (prog <= 60) {
             grade1 = 2;
-                System.out.println("оценка по программированию - " + grade1);
+            System.out.println("оценка по программированию - " + grade1);
         } else if (prog > 60 && prog < 73) {
             grade1 = 3;
-                System.out.println("оценка по программированию - " + grade1);
+            System.out.println("оценка по программированию - " + grade1);
         } else if (prog >= 73 && prog < 91) {
             grade1 = 4;
-                System.out.println("оценка по программированию - " + grade1);
+            System.out.println("оценка по программированию - " + grade1);
         } else if (prog >= 91) {
             grade1 = 5;
-                System.out.println("оценка по программированию - " + grade1);
-    }
+            System.out.println("оценка по программированию - " + grade1);
+        }
         System.out.println("Средний балл оценок по предметам = " + (grade + grade1) / 2.f);
         System.out.println("Средний % по предметам = " + mediumPercent);
 

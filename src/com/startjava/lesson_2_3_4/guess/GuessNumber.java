@@ -17,11 +17,11 @@ public class GuessNumber {
         Random rnd = new Random();
         int secretNum = rnd.nextInt(100 + 1);
         Scanner console = new Scanner(System.in);
- 
-        while(true) {
+
+        while (true) {
             System.out.println(pl1.getName() + ", введите число: ");
             int num = console.nextInt();
-            if(num == secretNum) {
+            if (num == secretNum) {
                 System.out.println("Победил игрок " + pl1.getName());
                 break;
             } else if (num > secretNum) {
@@ -32,7 +32,7 @@ public class GuessNumber {
 
             System.out.println(pl2.getName() + ", введите число: ");
             num = console.nextInt();
-            if(num == secretNum) {
+            if (num == secretNum) {
                 System.out.println("Победил игрок " + pl2.getName());
                 break;
             } else if (num > secretNum) {

@@ -1,55 +1,38 @@
 package com.startjava.lesson_2_3_4.calculator;
 
 public class Calculator {
-
-    // в данном классе описывается логика вычислений
-    // Переменные
-
-    private int numberOne;
-    private char sign;
-    private int numberTwo;
-
-     public void setNumberOne(int numberOne) {
-        this.numberOne = numberOne;
-    }
-
-    public void setSign(char sign) {
-        this.sign = sign;
-    }
-
-    public void setNumberTwo(int numberTwo) {
-        this.numberTwo = numberTwo;
-    }
-
-    public void calculation() {
-        switch(sign) {
-            case '+' :
-                System.out.println(numberOne + numberTwo);
-                break;
-            case '-' :
-                System.out.println(numberOne - numberTwo);
-                break;
-            case '*' :
-                System.out.println(numberOne * numberTwo);
-                break;
-            case '/' :
-                System.out.println(numberOne / numberTwo);
-                break;
-            case '%' :
-                System.out.println(numberOne % numberTwo);
-                break;
-            case '^' :
-                int result = 1;
-                for (int i = 0; i < numberTwo; i++) {
-                    result = result * numberOne;
+    // Метод для вычисления результата
+    public static double calculate(int num1, String operator, int num2) {
+        // Выбор оператора
+        switch (operator) {
+            case "+":
+                // Сложение
+                return num1 + num2;
+            case "-":
+                // Вычитание
+                return num1 - num2;
+            case "*":
+                // Умножение
+                return num1 * num2;
+            case "/":
+                // Деление, если второе число не равно нулю
+                if (num2 != 0) {
+                    return (double) num1 / num2;
+                } else {
+                    // Возвращение NaN при делении на ноль
+                    return Double.NaN;
                 }
-                System.out.println(result);
-                break;
+            case "^":
+                // Возведение в степень
+                return Math.pow(num1, num2);
             default:
-                System.out.println("Ошибка");
+                // Возвращение NaN при неподдерживаемом операторе
+                return Double.NaN;
         }
     }
 }
+
+
 
 
 

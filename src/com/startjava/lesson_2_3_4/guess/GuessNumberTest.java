@@ -2,7 +2,7 @@ package com.startjava.lesson_2_3_4.guess;
 
 import java.util.Scanner;
 
-public class GuessNumberTest{
+public class GuessNumberTest {
 
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
@@ -18,11 +18,11 @@ public class GuessNumberTest{
         String answer = "yes";
 
         do {
-            if("yes".equals(answer)) {
+            if ("yes".equals(answer)) {
                 game.start();
             }
             System.out.print("Хотите продолжить игру? [yes/no]: ");
             answer = console.nextLine();
-        } while(!"no".equals(answer));
+        } while (!"no".equals(answer));
     }
 }

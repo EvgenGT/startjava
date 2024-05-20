@@ -27,7 +27,7 @@ public class Calculator {
 
         } else if (result == '-') {
             System.out.println(a + " " + differenceChar + " " + b + " = " + difference);
-        
+
         } else if (result == '*') {
             System.out.println(a + " " + multiChar + " " + b + " = " + multi);
 
@@ -41,7 +41,7 @@ public class Calculator {
             for (int i = 1; i < b; i++) {
                 exponent *= a;
             }
-        System.out.println(a + " " + exponentChar + " " + b + " = " + exponent);
+            System.out.println(a + " " + exponentChar + " " + b + " = " + exponent);
         }
     }
 }
