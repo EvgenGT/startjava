@@ -4,6 +4,8 @@ import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.HashSet;
 
 public class ArrayTheme {
     public static void main(String[] args) {
@@ -95,20 +97,49 @@ public class ArrayTheme {
         System.out.println("\n");
         System.out.println("Задача № 5. Заполнение массива уникальными числами");
 
-        int[] randomNumber = new int[30];
-        boolean[] used = new boolean[30];
+//        int[] randomNumber = new int[30];
+//        boolean[] used = new boolean[30];
+//
+//        for (int i = 0; i < randomNumber.length; i++) {
+//            randomNumber[i] = (int) (Math.random() * (100 - 60)) + 60;
+//        }
+//        Arrays.sort(randomNumber);
+//
+//        for (int i = 0; i < randomNumber.length; i++) {
+//            System.out.print(randomNumber[i] + " ");
+//            if ((i + 1) % 10 == 0) {
+//                System.out.println();
+//            }
+//        }
+        int[] array = new int[30];
+        // Создаем новый экземпляр класса Random
+        Random random1 = new Random();
+        // Создаем новый экземпляр класса HashSet для хранения уникальных чисел
+        Set<Integer> set = new HashSet<>();
 
-        for (int i = 0; i < randomNumber.length; i++) {
-            randomNumber[i] = (int) (Math.random() * (100 - 60)) + 60;
+        // Заполняем массив
+        for (int i = 0; i < array.length; i++) {
+            int number;
+            // Генерируем новое число, пока оно не станет уникальным
+            do {
+                number = 60 + random1.nextInt(40); // Генерируем случайное число в полуинтервале [60, 100)
+            } while (set.contains(number));
+            // Добавляем число в массив и в множество
+            array[i] = number;
+            set.add(number);
         }
-        Arrays.sort(randomNumber);
 
-        for (int i = 0; i < randomNumber.length; i++) {
-            System.out.print(randomNumber[i] + " ");
+        // Сортируем массив
+        Arrays.sort(array);
+
+        // Выводим массив по 10 чисел в строке
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
             if ((i + 1) % 10 == 0) {
                 System.out.println();
             }
         }
+
 
         System.out.println("\n");
         System.out.println("Задача № 6. Игра “Виселица”");
