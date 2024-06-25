@@ -1,6 +1,6 @@
 --init DATABASE
 
-INSERT INTO Jaegers(modelName, mark, height, weight, status, origin, launch, kaijuKill)
+INSERT INTO Jaegers(model_name, mark, height, weight, status, origin, launch, kaiju_kill)
 	VALUES
 		('Cherno Alpha', 	'Mark 1', 	'85.458', 	'54.541', 		'Destroyed', 	'Russia', 		'2015.02.15', 	'6'),
 		('Brawler Yukon', 	'Mark 2',	'84.758', 	'65.761',		'Destroyed', 	'USA', 			'2015.06.08', 	'2'),
